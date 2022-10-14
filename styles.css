@@ -15,27 +15,21 @@
 }
 
 body {
-    background-image: url(./images/pattern-background-desktop.svg);
+	background-image: url(./images/pattern-background-desktop.svg);
     background-repeat: no-repeat;
-    background-size: cover;
     background-color: var(--pale-blue);
+    background-size: cover;
     font-family: "Red Hat Display", sans-serif;
     font-size: 16px;
 }
 
 .card {
-	width: 450px;
-    background-color: white;
-    color: var(--desaturated-blue);
+    width: 450px;
     border-radius: 20px;
     overflow: hidden;
+    background-color: white;
     margin: 50px auto;
-}
-
-.title {
-    color: var(--dark-blue);
-    font-weight: 900;
-    font-size: 32px;
+    color: var(--desaturated-blue);
 }
 
 .hero-image {
@@ -43,31 +37,36 @@ body {
 }
 
 .container {
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     text-align: center;
-    font-size: 16px;
+    padding: 30px;
 }
 
 .container > * {
     margin: 13px 0;
 }
 
+.title {
+    color: var(--dark-blue);
+}
+
 .order-description {
     line-height: 25px;
+    margin: 15px 50px;
 }
 
 .plan-container {
     font-size: 16px;
     background-color: var(--very-pale-blue);
-    padding: 25px;
     border-radius: 12px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding: 25px;
+}
+
+.plan-container strong {
+    color: var(--dark-blue);
 }
 
 .plan-container a {
@@ -81,10 +80,6 @@ body {
     text-decoration: none;
 }
 
-.plan-container strong {
-    color: var(--dark-blue);
-}
-
 .plan-description {
     line-height: 20px;
     margin-right: 95px;
@@ -92,9 +87,9 @@ body {
 
 button {
     width: 100%;
-    border: none;
     font-weight: 700;
     font-size: 0.9rem;
+    border: none;
     border-radius: 12px;
     cursor: pointer;
 }
@@ -102,7 +97,7 @@ button {
 .proceed-button {
     background-color: var(--bright-blue);
     padding: 1rem 0;
-    color: white;
+    color: var(--very-pale-blue);
     box-shadow: 0 20px 30px -8px rgb(197 189 245);
 }
 
@@ -112,8 +107,8 @@ button {
 
 .cancel-button {
     background-color: white;
-    color: var(--desaturated-blue);
     margin-top: 22px;
+    color: var(--desaturated-blue);
 }
 
 .cancel-button:hover {
